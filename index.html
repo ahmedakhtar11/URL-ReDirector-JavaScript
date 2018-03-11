@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>URL ReDirector</title>
+    <script>
+
+        function myFunction() {
+            var redirector = ((document.getElementById("redirection") || {}).value) || "";
+
+            if (redirector === "stackoverflow") {
+                alert("Redirecting to Another URL");
+                window.location.replace("https://stackoverflow.com");
+            }
+
+            else if (redirector === "github") {
+                alert("Redirecting to Another URL");
+                window.location.replace("https://github.com");
+            }
+        }
+        </script>
+        <style>
+            body { background-color: aliceblue;
+                   color: darkblue; font-family: Arial;
+            }
+        </style>
+
+    </head>
+<body>
+    <!-- JumboTron-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>Welcome to the JavaScript URL Redirector!.</h1>
+            <h2>URL/Payment Form Redirector</h2>
+        </div>
+    </div>
+
+
+    <container>
+        <strong>Redirect To?:</strong> <br />
+        <!-- HTML Dropdown Selector-->
+        <select id="redirection">
+            <option value="stackoverflow">Stack OverFlow</option>
+            <option value="github">GitHub</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" id="submit" value="Submit" onclick="myFunction()">
+    </container>
+
+</body>
+</html>

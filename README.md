@@ -1,1 +1,1 @@
-# URL-ReDirector-JavaScript
+# A Simple URL-ReDirector-JavaScript using If and Then Statements along with window.location.replace("www.samplewebsite.com");
